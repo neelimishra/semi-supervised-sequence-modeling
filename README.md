@@ -1,5 +1,5 @@
 # Semi-supervised sequence modeling
-A collection of tools for analyzing behavioral data. This repo currently supports fitting the 
+A collection of tools (daart) for analyzing behavioral data. This repo currently supports fitting the 
 following types of models on behavioral time series data:
 * Dense MLP network with initial 1D convolutional layer
 * RNNs - both LSTMs and GRUs
