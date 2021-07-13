@@ -1,4 +1,4 @@
-# daart: deep learning for animal action recognition toolbox
+# Semi-supervised sequence modeling
 A collection of tools for analyzing behavioral data. This repo currently supports fitting the 
 following types of models on behavioral time series data:
 * Dense MLP network with initial 1D convolutional layer
@@ -11,11 +11,11 @@ following types of models on behavioral time series data:
 First you'll have to install the `git` package in order to access the code on github. Follow the 
 directions [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) 
 for your specific OS.
-Then, in the command line, navigate to where you'd like to install the `daart` package and move 
+Then, in the command line, navigate to where you'd like to install the `semi-supervised-sequence-modeling` package and move 
 into that directory:
 ```
-$: git clone https://github.com/themattinthehatt/daart
-$: cd daart
+$: git clone https://github.com/neelimishra/semi-supervised-sequence-modeling
+$: cd semi-supervised-sequence-modeling
 ```
 
 Next, follow the directions 
@@ -24,22 +24,22 @@ to install the `conda` package for managing development environments.
 Then, create a conda environment:
 
 ```
-$: conda create --name=daart python=3.6
-$: conda activate daart
-(daart) $: pip install -r requirements.txt 
+$: conda create --name=semi-supervised-sequence-modeling python=3.6
+$: conda activate semi-supervised-sequence-modeling
+(semi-supervised-sequence-modeling) $: pip install -r requirements.txt 
 ```
 
 To make the package modules visible to the python interpreter, locally run pip 
-install from inside the main `daart` directory:
+install from inside the main `semi-supervised-sequence-modeling` directory:
 
 ```
-(daart) $: pip install -e .
+(semi-supervised-sequence-modeling) $: pip install -e .
 ```
 
 To be able to use this environment for jupyter notebooks:
 
 ```
-(daart) $: python -m ipykernel install --user --name daart
+(semi-supervised-sequence-modeling) $: python -m ipykernel install --user --name semi-supervised-sequence-modeling
 ```
 
 ## Getting started
@@ -58,7 +58,7 @@ Once you have set the desired parameters in these files (see comment on data pat
 then fit models like so:
 
 ```
-(daart) $: python fit_models.py --data_config /path/to/data.yaml 
+(semi-supervised-sequence-modeling) $: python fit_models.py --data_config /path/to/data.yaml 
        --model_config /path/to/model.yaml --train_config /path/to/train.yaml
 ```
 
